@@ -12,18 +12,23 @@
 			body {
 				padding-top: 60px;
 				padding-bottom: 40px;
-				background-color: #FFF;
+			}
+			h1 {
+				border-bottom: 1px solid #ededed;
+				margin-bottom: 20px;
 			}
 			.sidebar-nav {
 				padding: 9px 0;
 			}
 			#mode {
-				margin-bottom: -18px;
-				margin-left: -1px;
+				position: absolute;
 			}
 			#mode .btn {
 				padding-left: 15px;
 				padding-right: 15px;
+			}
+			#mode .btn:last-child {
+				padding-right: 14px;
 			}
 		</style>
 		<link href="http://bootstrap.axxim.net/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
@@ -47,7 +52,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</a>
-					<a class="brand" href="#">Project name</a>
+					<a class="brand" href="#">Learn.</a>
 					<div class="nav-collapse">
 						<ul class="nav">
 							<li class="active"><a href="#">Home</a></li>
@@ -80,7 +85,7 @@
 							<li><a href="#">Link</a></li>
 							<li><a href="#">Link</a></li>
 							<li class="nav-header">PHP</li>
-							<li><a href="#">Link</a></li>
+							<li><a href="#">Functions</a></li>
 							<li><a href="#">Link</a></li>
 							<li><a href="#">Link</a></li>
 							<li><a href="#">Link</a></li>
@@ -93,31 +98,58 @@
 						</ul>
 					</div><!--/.well -->
 				</div>
-				<div class="span10">
-					<!-- Main hero unit for a primary marketing message or call to action -->
-					<div class="hero-unit">
-						<h1>Hello, world!</h1>
-						<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-						<p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-					</div>
-					<!-- Example row of columns -->
-					<div class="row">
-						<div class="span3">
-							<h2>Heading</h2>
-							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-							<p><a class="btn" href="#">View details &raquo;</a></p>
-						</div>
-						<div class="span3">
-							<h2>Heading</h2>
-							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-							<p><a class="btn" href="#">View details &raquo;</a></p>
-						</div>
-						<div class="span3">
-							<h2>Heading</h2>
-							<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-							<p><a class="btn" href="#">View details &raquo;</a></p>
-						</div>
-					</div>
+				<div class="well span9">
+					<h1><a href="/php">PHP</a>: Functions</h1>
+	       
+					<p>A function is a stored piece of code that can be executed at will. Functions are the single most important 
+						thing you will learn and you'll love how much time they will save you. Here's a basic function: </p>
+
+					<pre><code>&lt;?php
+function basicFunction() {
+
+}</code></pre>
+					<p>Cool, right? Well, maybe not, but let's say you need to print what YouTube video you're currently watching 
+						on different pages of your website? Check this out: </p>
+
+					<pre><code>&lt;?php
+function currentlyWatching() {
+    echo &quot;http://www.youtube.com/watch?v=ry2DwzG4zfs&quot;;
+}</code></pre>
+					<p>That sure does look cooler, but it doesn't print anything even though you have an echo tag. That's where 
+						the power of functions come in. Now that you've defined a function called <code>currentlyWatching</code>, 
+						you can have it execute the code inside it from anywhere on the page! Let's try it.</p>
+
+					<pre><code>&lt;?php
+function currentlyWatching() {
+    echo &quot;http://www.youtube.com/watch?v=ry2DwzG4zfs&quot;;
+}
+?&gt;
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+		&lt;title&gt;Your Website&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;p&gt;Welcome to my website, I'm currently watching &lt;?php currentlyWatching(); ?&gt;.&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+					<h2>Their True Power</h2>
+					<p>-- Functions can take args and you can define your own --</p>
+
+					<h3>Important Tips!</h3>
+					<ul>
+						<li>Function names must start with either a letter or an underscore.</li>
+						<li>Aliquam tincidunt mauris eu risus.</li>
+					</ul>
+
+					<h1>More Help</h1>
+					<p>-- Link to other reputable sites like ircmaxell --</p>
+
+					<h1>Questions? Comments?</h1>
+					<p>If you have a question or a comment, don't worry, we're here to help.</p>
 				</div>
 			</div>
 			<hr />
