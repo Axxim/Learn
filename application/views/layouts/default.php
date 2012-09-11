@@ -13,8 +13,16 @@
 				padding-top: 60px;
 				padding-bottom: 40px;
 			}
+			h1,h2,h3,h4,h5,h6 {
+				margin-top: 10px;
+			}
 			h1 {
 				border-bottom: 1px solid #ededed;
+				margin-bottom: 20px;
+			}
+			h2 {
+				border-bottom: 1px solid #ededed;
+				margin-top: 20px;
 				margin-bottom: 20px;
 			}
 			.sidebar-nav {
@@ -56,8 +64,8 @@
 					<div class="nav-collapse">
 						<ul class="nav">
 							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#contact">Contact</a></li>
+							<li><a href="#about">Topics</a></li>
+							<li><a href="#contact">Forums</a></li>
 						</ul>
 					</div>
 					<!--/.nav-collapse -->
@@ -126,17 +134,17 @@ function currentlyWatching() {
 ?&gt;
 &lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
-	&lt;head&gt;
-		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
-		&lt;title&gt;Your Website&lt;/title&gt;
-	&lt;/head&gt;
-	&lt;body&gt;
-		&lt;p&gt;Welcome to my website, I'm currently watching &lt;?php currentlyWatching(); ?&gt;.&lt;/p&gt;
-	&lt;/body&gt;
+    &lt;head&gt;
+        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+        &lt;title&gt;Your Website&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;Welcome to my website, I'm currently watching &lt;?php currentlyWatching(); ?&gt;.&lt;/p&gt;
+    &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
-					<h2>Their True Power</h2>
+					<h3>Their True Power</h3>
 					<p>-- Functions can take args and you can define your own --</p>
 
 					<h3>Important Tips!</h3>
@@ -145,11 +153,10 @@ function currentlyWatching() {
 						<li>Aliquam tincidunt mauris eu risus.</li>
 					</ul>
 
-					<h1>More Help</h1>
+					<h2>More Help</h2>
 					<p>-- Link to other reputable sites like ircmaxell --</p>
 
-					<h1>Questions? Comments?</h1>
-					<p>If you have a question or a comment, don't worry, we're here to help.</p>
+					<h2>Questions? Comments? <small>(we're here to help!)</small></h2>
 				</div>
 			</div>
 			<hr />
