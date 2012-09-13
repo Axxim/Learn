@@ -60,7 +60,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</a>
-					<a class="brand" href="#">Learn.</a>
+					<a class="brand" href="#" style='text-transform:uppercase;'>Learn</a>
 					<div class="nav-collapse">
 						<ul class="nav">
 							<li class="active"><a href="#">Home</a></li>
@@ -107,6 +107,8 @@
 					</div><!--/.well -->
 				</div>
 				<div class="well span9">
+					<?php echo $content; ?>
+
 					<h1><a href="/php">PHP</a>: Functions</h1>
 	       
 					<p>A function is a stored piece of code that can be executed at will. Functions are the single most important 
@@ -170,6 +172,9 @@ function currentlyWatching() {
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 		<script src="http://bootstrap.axxim.net/bootstrap/js/bootstrap.min.js"></script>
+		<script src="<?php echo base_url('assets/libraries/epiceditor/js/epiceditor.min.js'); ?>"></script>
+
+		<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 		<script>
 		/* Autogenerate from database */
 		var simple = {
